@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Registration Form</title>
+  <link rel="stylesheet" href="EmployeeRegistration.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-header">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Employee Logo" class="logo">
+      <h2>Employee Registration Form</h2>
+    </div>
+
+    <form id="employeeForm">
+      <div class="form-group">
+        <label for="empName">Full Name</label>
+        <input type="text" id="empName" name="empName" placeholder="Enter full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="empEmail">Email</label>
+        <input type="email" id="empEmail" name="empEmail" placeholder="Enter email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="empPhone">Phone Number</label>
+        <input type="tel" id="empPhone" name="empPhone" placeholder="Enter phone number" required>
+      </div>
+
+      <div class="form-group">
+        <label for="empDept">Department</label>
+        <select id="empDept" name="empDept" required>
+          <option value="">Select Department</option>
+          <option value="HR">HR</option>
+          <option value="Finance">Finance</option>
+          <option value="IT">IT</option>
+          <option value="Marketing">Marketing</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="empGender">Gender</label>
+        <div class="gender-options">
+          <label><input type="radio" name="empGender" value="Male" required> Male</label>
+          <label><input type="radio" name="empGender" value="Female" required> Female</label>
+          <label><input type="radio" name="empGender" value="Other" required> Other</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="empPhoto">Profile Photo</label>
+        <input type="file" id="empPhoto" accept="image/*" required>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="submit-btn">Register</button>
+      </div>
+    </form>
+
+    <div id="message"></div>
+  </div>
+
+  <script src="EmployeeRegistration.js"></script>
+</body>
+</html>
