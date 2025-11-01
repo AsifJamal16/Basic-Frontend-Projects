@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1740&q=80')
+                no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* main wrapper to hold image + form */
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* image section */
+.image-section img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* form container */
+.container {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+    font-size: 14px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #007bff;
+}
+
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#responseMsg {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* responsive layout for small screens */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .image-section img {
+        width: 200px;
+    }
+}

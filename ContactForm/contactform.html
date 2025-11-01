@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contactform.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="image-section">
+            <img src="https://png.pngtree.com/png-clipart/20230928/original/pngtree-illustration-of-contact-us-form-in-flat-style-with-call-center-png-image_12897663.png" 
+                 alt="contact illustration">
+        </div>
+
+        <div class="container">
+            <h2>contact us</h2>
+            <form id="contactForm">
+                <label for="name">name</label>
+                <input type="text" id="name" placeholder="enter your name">
+
+                <label for="email">email</label>
+                <input type="email" id="email" placeholder="enter your email">
+
+                <label for="message">message</label>
+                <textarea id="message" rows="5" placeholder="your message..."></textarea>
+
+                <button type="submit">send message</button>
+                <p id="responseMsg"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="contactform.js"></script>
+</body>
+</html>
