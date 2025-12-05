@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Company Footer</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family:Arial, sans-serif;
+            background:#f0f0f0;
+        }
+
+        footer{
+            background:#000;
+            color:#fff;
+            padding:50px 40px;
+        }
+
+        .footer-container{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:space-between;
+            align-items:flex-start;
+        }
+
+        .footer-logo h2{
+            font-size:32px;
+            margin:0 0 20px 0;
+        }
+
+        .footer-column{
+            margin:15px 0;
+            min-width:180px;
+        }
+
+        .footer-column h3{
+            font-size:18px;
+            margin-bottom:10px;
+            border-bottom:2px solid #fff;
+            display:inline-block;
+            padding-bottom:5px;
+        }
+
+        .footer-column ul{
+            list-style:none;
+            padding:0;
+            margin:0;
+        }
+
+        .footer-column ul li{
+            margin:8px 0;
+        }
+
+        .footer-column ul li a{
+            color:#ccc;
+            text-decoration:none;
+        }
+
+        .footer-column ul li a:hover{
+            color:#fff;
+        }
+
+        .media{
+            display:flex;
+            gap:15px;
+            margin-top:20px;
+        }
+
+        .media-icons{
+            width:40px;
+            height:40px;
+            border-radius:50%;
+            background:#333;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:18px;
+            color:white;
+            cursor:pointer;
+        }
+
+        .bottom-bar{
+            background:#2a2d35;
+            padding:15px 40px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            font-size:14px;
+            color:#cfcfcf;
+        }
+
+        /* Responsive */
+        @media (max-width:768px){
+            .footer-container{
+                flex-direction:column;
+                text-align:center;
+            }
+            .footer-column h3{
+                text-align:center;
+                margin:auto;
+            }
+            .media{
+                justify-content:center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<footer>
+    <div class="footer-container">
+
+        <!-- Logo -->
+        <div class="footer-logo">
+            <h2>company</h2>
+            <div class="media">
+                <div class="media-icons">F</div>
+                <div class="media-icons">T</div>
+                <div class="media-icons">I</div>
+                <div class="media-icons">L</div>
+                <div class="media-icons">Y</div>
+            </div>
+        </div>
+
+        <!-- Links Section -->
+        <div class="footer-column">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Get Started</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+        </div>
+
+        <!-- Services Section -->
+        <div class="footer-column">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">App Design</a></li>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Logo Design</a></li>
+                <li><a href="#">Banner Design</a></li>
+            </ul>
+        </div>
+
+        <!-- Other Section -->
+        <div class="footer-column">
+            <h3>Other Services</h3>
+            <ul>
+                <li><a href="#">SEO</a></li>
+                <li><a href="#">Content Marketing</a></li>
+                <li><a href="#">Prints</a></li>
+                <li><a href="#">Social Media</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <ul>
+                <li><a href="#">+91 8879887262</a></li>
+                <li><a href="#">contact@company.com</a></li>
+                <li><a href="#">Social Media Page</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
+
+<div class="bottom-bar">
+    <p>Copyright © 2021 company.</p>
+    <p><a href="#" style="color:#fff; text-decoration:none;">Privacy policy</a></p>
+</div>
+
+</body>
+</html>
