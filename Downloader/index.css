@@ -1,0 +1,30 @@
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #333;
+        }
+        .container{
+            height: 150px;
+            width: 300px;
+            background-color: #555;
+            border: 1px solid #9b9191;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin:250px auto ;
+        }
+        
+        h3,h4{
+            background-color: #555;
+        }
+        .bar{
+            height: 10px;
+            width: 190px;
+            border-radius: 7px;
+            background-color: white;
+            align-self: flex-start; 
+            margin-left: 55px;
+        }
